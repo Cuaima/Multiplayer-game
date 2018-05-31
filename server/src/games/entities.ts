@@ -7,7 +7,7 @@ export type Board = [ Row, Row, Row, Row, Row, Row, Row ]
 
 type Status = 'pending' | 'started' | 'finished'
 
-const emptyRow: Row = [null, null, null, null, null, null]
+export const emptyRow: Row = [null, null, null, null, null, null]
 const emptyBoard: Board = [ emptyRow, emptyRow, emptyRow, emptyRow, emptyRow, emptyRow, emptyRow ]
 
 @Entity()
