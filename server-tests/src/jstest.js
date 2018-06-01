@@ -4,7 +4,7 @@ const board = [
     [null, null, null, null, null],
     [null, null, null, null, null],
     [null, null, null, null, null],
-    [null, 'x', 'x', 'x', 'x']
+    [null, 'o', 'o', 'o', 'o']
   ];
   
   const alltogether = board.concat()
@@ -22,22 +22,13 @@ const board = [
 //     }
 // }
 
-const test = board.map(row => 
+const testX = board.map(row => 
     row
     .map(value => value === null ? "-" : value)      
     .join('')
-    .match('xxxx')
-    .filter(n => n !== null)
-    ).length
-    // .join('')
-    
+    .match('oooo')
+    ).join('')
+    .length
 
-    // const winX = test.match('xxxx')
-    // const winO = test.match('oooo')
-    // if (winX){
-    //     return 'x'
-    // } else {
-    //     return null
-    // }
     
 console.log(test)
