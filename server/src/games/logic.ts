@@ -42,7 +42,7 @@ export const calculateWinner = (board: Board): Symbol | null =>
         // diagonal winner ltr
         [0, 1, 2, 3].map(n => board[n][n]),
         // diagonal winner rtl
-        [0, 1, 2, 3].map(n => board[3-n][n])
+        [0, 1, 2, 3].map(n => board[6-n][n])
       ] as Row[]
     )
     .filter(row => row[0] && row.every(symbol => symbol === row[0]))

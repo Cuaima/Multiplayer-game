@@ -10,8 +10,9 @@ export type Board = [ Row, Row, Row, Row, Row, Row, Row ]
 
 type Status = 'pending' | 'started' | 'finished'
 
+export const emptyRow: Row = [null, null, null, null, null, null]
 
-const emptyRow: Row = [null, null, null, null, null, null]
+
 const emptyBoard: Board = [ emptyRow, emptyRow, emptyRow, emptyRow, emptyRow, emptyRow, emptyRow ]
 
 
