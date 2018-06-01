@@ -63,18 +63,14 @@ export const calculateWinner = (board: Board) => {
     row
     .map(value => value === null ? "-" : value)      
     .join('')
-    )
-    .join('')
-    // .match('xxxx' || 'oooo')
-
-    const winX = test.match('xxxx')
-    const winO = test.match('oooo')
-    if (winX){
-        return 'x'
-    } else if (winO){
-        return 'o'
-    }else {
-        return null
-    }
+    .match(/oooo|xxxx/)
+    ).join('')
+    .length
+  
+  if (test > 0){
+      return 'x'
+  } else {
+      return null
+  }
   }
 

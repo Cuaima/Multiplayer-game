@@ -22,7 +22,7 @@ const board = [
 //     }
 // }
 
-const testX = board.map(row => 
+const test = board.map(row => 
     row
     .map(value => value === null ? "-" : value)      
     .join('')

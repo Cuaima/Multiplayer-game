@@ -4,7 +4,6 @@ import './Board.css'
 const renderCel = (makeMove, rowIndex, cellIndex, symbol, hasTurn) => {
   return (
     <button
-      // className="board-tile"
       className={({symbol})? `board-tile symbol-${symbol}`: "board-tile"}
       disabled={hasTurn}
       onClick={() => makeMove(rowIndex, cellIndex)}
