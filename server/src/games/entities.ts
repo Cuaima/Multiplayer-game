@@ -5,10 +5,19 @@ export type Symbol = 'x' | 'o'
 export type Row = [ Symbol | null, Symbol | null, Symbol | null, Symbol | null, Symbol | null, Symbol | null ]
 export type Board = [ Row, Row, Row, Row, Row, Row, Row ]
 
+
+
+
 type Status = 'pending' | 'started' | 'finished'
 
 export const emptyRow: Row = [null, null, null, null, null, null]
+
+
 const emptyBoard: Board = [ emptyRow, emptyRow, emptyRow, emptyRow, emptyRow, emptyRow, emptyRow ]
+
+
+ 
+
 
 @Entity()
 export class Game extends BaseEntity {
