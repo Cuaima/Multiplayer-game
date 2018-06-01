@@ -1,5 +1,5 @@
 import { ValidatorConstraint, ValidatorConstraintInterface } from 'class-validator'
-import { Board, Symbol, Row } from './entities'
+import { Board, Symbol, Row,} from './entities'
 
 @ValidatorConstraint()
 export class IsBoard implements ValidatorConstraintInterface {
@@ -30,6 +30,7 @@ export const isValidTransition = (playerSymbol: Symbol, from: Board, to: Board) 
     changes[0].from === null
 }
 
+
 // export const calculateWinner = (board: Board): Symbol | null =>
 //   board
 //     .concat(
@@ -48,10 +49,13 @@ export const isValidTransition = (playerSymbol: Symbol, from: Board, to: Board) 
 //     .map(row => row[0])[0] || null
 
 
-export const finished = (board: Board): boolean =>
+
+
+    export const finished = (board: Board): boolean =>
   board
     .reduce((a,b) => a.concat(b) as Row)
     .every(symbol => symbol !== null)
+
 
 export const calculateWinner = (board: Board) => {
 
@@ -73,3 +77,4 @@ export const calculateWinner = (board: Board) => {
         return null
     }
   }
+
