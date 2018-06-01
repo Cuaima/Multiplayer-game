@@ -29,7 +29,6 @@ class GameDetails extends PureComponent {
       // console.log(rowLength)
       if (rowLength === 0) return
       thisRow[rowLength - 1] = game.turn
-      // board[toRow][rowLength - 1] = game.turn
       // console.log(board)
     updateGame(game.id, board)
   }

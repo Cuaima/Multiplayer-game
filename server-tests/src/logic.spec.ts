@@ -31,4 +31,18 @@ describe('calculateWinner()', () => {
 
       expect(calculateWinner(board)).to.equal(null);
     })
+
+    it('should return null for three horizontal xs and one o', () => {
+      const board: Board = [
+        emptyRow,
+        emptyRow,
+        emptyRow,
+        emptyRow,
+        emptyRow,
+        emptyRow,
+        [null, 'o', 'o', 'o', 'o', null]
+      ];
+
+      expect(calculateWinner(board)).to.equal('o');
+    })
 })
