@@ -1,4 +1,32 @@
+.board-row {
+  width:14%;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .board-tile {
-  height: 50px;
   width: 50px;
+	height: 50px;
+  background: grey;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.symbol-x{
+  width: 50px;
+	height: 50px;
+  background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.symbol-o{
+  width: 50px;
+	height: 50px;
+	background: yellow;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
 }
